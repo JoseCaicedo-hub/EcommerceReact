@@ -1,0 +1,14 @@
+/* Ajusta el input y el botón de enviar para que queden alineados */
+.rsc-input {
+  height: 40px !important;
+  padding: 0 10px !important;
+  display: flex;
+  align-items: center;
+}
+
+.rsc-submit-button {
+  height: 40px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

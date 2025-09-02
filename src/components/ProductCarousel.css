@@ -1,0 +1,92 @@
+.product-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* Ajusta esto según el tamaño deseado */
+  height: 500px; /* Ajusta la altura para que ocupe más de la mitad de la pantalla */
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  background-color: #000000; /* Fondo negro para el carrusel */
+}
+
+.carousel-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+  opacity: 0.7; /* Ligeramente transparente para el texto */
+}
+
+.carousel-text-overlay {
+  position: absolute;
+  color: #ffffff; /* Texto blanco */
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+  border-radius: 10px;
+}
+
+.carousel-text-overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.carousel-text-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6); /* Botones negros semitransparentes */
+  color: #ffffff; /* Flechas blancas */
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.9); /* Más oscuro al pasar el ratón */
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.carousel-shop-button {
+  background-color: #ffffff; /* Botón de compra blanco */
+  color: #000000; /* Texto negro */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.carousel-shop-button:hover {
+  background-color: #cccccc; /* Gris claro al pasar el ratón */
+  color: #000000;
+}

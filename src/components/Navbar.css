@@ -1,0 +1,83 @@
+/* Fondo degradado cálido estilo hogar */
+.navbar {
+  background: linear-gradient(90deg, #333333, #000000); /* Gris oscuro a negro */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff; /* Blanco */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5); /* Borde blanco */
+}
+
+/* Logo con luz cálida */
+.logo {
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: #ffffff; /* Blanco */
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.8); /* Sombra blanca */
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 1);
+}
+
+/* Contenedor de enlaces */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Links estilo cálido */
+.nav-link {
+  position: relative;
+  font-weight: 600;
+  color: #ffffff; /* Blanco */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Subrayado animado estilo luz */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #080602;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #5e5e5e;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Badge del carrito con tono cálido */
+.cart-badge {
+  background-color: #ffffff; /* Blanco */
+  color: #999999;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  margin-left: 5px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.9); /* Sombra blanca */
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}

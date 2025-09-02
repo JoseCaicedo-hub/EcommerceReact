@@ -1,0 +1,66 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0; /* Blanco muy claro */
+  margin: 0;
+  padding: 0;
+  color: #333333; /* Gris oscuro */
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.ChatBot {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ------------------- Responsividad ------------------- */
+@media (max-width: 1024px) {
+  main {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: 1rem auto;
+  }
+
+  .ChatBot {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .ChatBot {
+    min-height: auto;
+  }
+}
+
+.volver-btn {
+  background-color: #555555; /* Gris */
+  color: #ffffff; /* Blanco */
+  border: none;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.volver-btn:hover {
+  background-color: #000000; /* Negro */
+  transform: scale(1.05);
+}
