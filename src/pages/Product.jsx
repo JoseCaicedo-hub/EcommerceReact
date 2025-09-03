@@ -26,7 +26,7 @@ export default function Product() {
   return (
     <main style={{ maxWidth: 600, margin: "2rem auto" }}>
       <img
-        src={product.image}
+        src={product.urlImage}
         alt={product.name}
         style={{ width: "80%", borderRadius: 12, objectFit: "cover" }}
       />
